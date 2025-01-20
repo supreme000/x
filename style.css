@@ -1,0 +1,335 @@
+@import url('https://fonts.cdnfonts.com/css/rawline');
+
+body {
+    margin: 0;
+    font-family: 'Rawline', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+.header {
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #DFDFDF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 24px;
+    display: block;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-actions i {
+    color: #1351B4;
+    font-size: 16px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 30px;
+    background-color: #DFDFDF;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+}
+
+.profile i {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Container */
+.container-lg {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #DFDFDF;
+    font-size: 12px;
+}
+
+.home-link {
+    color: #1351B4;
+    text-decoration: none;
+}
+
+.separator {
+    margin: 5px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+/* Back Section */
+.back-section {
+    padding: 8px 0;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    color: #1351B4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.back-link i {
+    font-size: 16px;
+    padding: 0px 15px;
+}
+
+/* Content Section */
+.content-section {
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.content-section p {
+    margin: 0 0 25px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.content-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+.text {
+    font-size: 16.8px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+
+.card-container {
+    margin: 0 auto;
+    width: 420px;
+    height: 310px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0em 0em 0.4em rgb(211, 211, 211);
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+
+.blue-section {
+    margin: 0 auto;
+    padding: 5px 0px 0px 15px;
+    background-image: url(x.png);
+    background-size: 100% 120%;
+    aspect-ratio: 2.6 / 1;
+    background-repeat: no-repeat;
+    width: 373px;
+    height: 144px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0em 0em 0.4em rgb(211, 211, 211);
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cpf-text {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.name { 
+    color: white;
+    font-size: 12px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.info-content > * {
+    margin: 0;
+}
+
+.number {
+    font-size: 10px;
+}
+
+.rf {
+    font-size: 13px; /* Tamanho menor para "RECEITA FEDERAL" */
+    color: #888888; /* Cor cinza claro */
+    margin: 10px 15px 0;
+    margin-top: 60px;
+    text-transform: uppercase; /* Letras maiúsculas */
+    text-align: left; /* Alinha à esquerda, sob o blue-section */
+}
+
+.cd {
+    font-size: 20px; /* Tamanho maior para "Cadastro de Pessoa Física" */
+    color: #1A73E8; /* Cor azul */
+    margin: 5px 15px 0;
+    margin-top: 15px;
+    text-align: left; /* Alinha à esquerda, sob o blue-section */
+}
+
+.card-nivel-container {
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.26);
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.nivel-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nivel-title {
+    font-size: 20.16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.divider {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #DFDFDF;
+}
+
+.nivel-card-content {
+    margin-top: 20px;
+}
+
+.nivel-status {
+    display: flex;
+    flex-direction: column;    
+}
+
+.nivel-status svg {
+    width: 100%; /* Faz com que o SVG ocupe 100% da largura disponível */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Garante que ele se comporte como um bloco */
+    margin: 0 auto;
+    margin-top: 15px; 
+}
+
+
+
+.nivel-text {
+    font-size: 16px;
+    color: #636363;
+}
+
+.nivel-barra {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.nivel-instructions {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.nivel-card-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nivel-button {
+    --color-primary: #1351b4;
+    --color-white: #fff;
+    --color-linkedin: #0e76a8;
+    background: #fff;
+    border: 1px solid var(--color-primary);
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: var(--color-primary);
+    cursor: pointer;
+    float: right;
+    font-family: rawline, Rawline, sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0.1em 1em;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em; /* Espaçamento entre o texto e o ícone */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nivel-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.nivel-button .icon {
+    width: 1em; /* Define a largura do SVG como proporcional ao tamanho do texto */
+    height: 1em; /* Mantém a proporção do SVG */
+    fill: currentColor; /* Garante que o SVG herde a cor do texto */
+}
+
