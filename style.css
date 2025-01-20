@@ -148,18 +148,24 @@ body {
 }
 
 
-.card-container {
+body {
+    margin: 0;
+    font-family: "Rawline", sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .card-container {
     margin: 0 auto;
-    width: 420px;
-    height: 310px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0em 0em 0.4em rgb(211, 211, 211);
-    padding-top: 20px;
+    width: 390px;
+    background-color: #fff;
+    padding: 20px;
     box-sizing: border-box;
-}
-
-
-.blue-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blue-section {
     margin: 0 auto;
     padding: 5px 0px 0px 15px;
     background-image: url(x.png);
@@ -171,61 +177,124 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0em 0em 0.4em rgb(211, 211, 211);
-}
-
-.text-content {
+  }
+  
+  .text-content {
     position: relative;
     z-index: 1;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.cpf-text {
+  }
+  
+  .cpf-text {
     color: white;
     font-size: 12px;
     font-weight: bold;
-
-}
-
-.name { 
-    color: white;
+  }
+  
+  .name {
     font-size: 12px;
+    color: white;
     margin-top: 70px;
     margin-bottom: 20px;
-}
-
-.info-content {
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .info-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-between;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.2;
-}
-
-.info-content > * {
+  }
+  
+  .info-content > * {
     margin: 0;
-}
-
-.number {
+  }
+  
+  .info-left,
+  .info-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blue-section-wrapper {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 373px;
+    margin: 0 auto;
+  }
+  
+  .number {
+    color: #666;
     font-size: 10px;
-}
-
-.rf {
-    font-size: 13px; /* Tamanho menor para "RECEITA FEDERAL" */
-    color: #888888; /* Cor cinza claro */
+    margin: 0 0 5px 0;
+  }
+  
+  .sit {
+    color: #666;
+    font-size: 10px;
+    margin: 0 0 5px 0;
+  }
+  
+  .cpf-number,
+  .reg {
+    color: #333;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .rf {
+    color: #888888;
+    font-size: 13px;
     margin: 10px 15px 0;
-    margin-top: 60px;
-    text-transform: uppercase; /* Letras maiúsculas */
-    text-align: left; /* Alinha à esquerda, sob o blue-section */
-}
-
-.cd {
-    font-size: 20px; /* Tamanho maior para "Cadastro de Pessoa Física" */
-    color: #1A73E8; /* Cor azul */
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  
+  .cd {
+    font-size: 20px;
+    color: #1a73e8;
     margin: 5px 15px 0;
     margin-top: 15px;
-    text-align: left; /* Alinha à esquerda, sob o blue-section */
-}
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card-container {
+      padding: 15px;
+    }
+  
+    .blue-section {
+      width: 100%;
+      height: auto;
+    }
+  
+    .blue-section-wrapper {
+      width: 100%;
+    }
+  
+    .info-content {
+      padding: 15px;
+    }
+  
+  }
+  
+  
+  
+  
+
 
 .card-nivel-container {
     margin: 20px auto;
@@ -332,4 +401,6 @@ body {
     height: 1em; /* Mantém a proporção do SVG */
     fill: currentColor; /* Garante que o SVG herde a cor do texto */
 }
+
+
 
